@@ -34,6 +34,7 @@ class TestMultiplyDivideWithValidation:
         with pytest.raises(TypeError, match="Division requires numeric inputs"):
             divide("10", 2)
             
+    # TODO: Students will add TestMultiplyDivide class
     def test_add_negative_numbers(self):
         """Test adding negative numbers"""
         assert add(-1, -1) == -2
@@ -68,4 +69,3 @@ class TestMultiplyDivideWithValidation:
         with pytest.raises(ValueError, match="Cannot calculate square root of negative"):
             square_root(-4)
 
-# TODO: Students will add TestMultiplyDivide class
