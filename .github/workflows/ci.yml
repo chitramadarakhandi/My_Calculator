@@ -1,12 +1,14 @@
-name: CI/CD pipeline
- 
-on: 
+name: CI/CD Pipeline
+
+on:
   push: 
-    branches: [ '**' ] 
-  pull_request: 
-    branches: [ '**' ] 
+    branches: [ '**' ]
+  pull_request:
+    branches: [ '**' ]
+
+jobs:
  
-jobs: 
+
   # The YAML structure is most strictly checked here. 
   # All jobs must align perfectly beneath 'jobs:'
   # Build stage: prepare Python and install 
